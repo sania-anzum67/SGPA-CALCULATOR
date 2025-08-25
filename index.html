@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="glass-card">
+        <h2>SGPA Calculator</h2>
+
+        <div class="formula">
+            <strong>SGPA = Σ (Grade × Credits) / Σ Credits</strong>
+        </div>
+
+        <input type="number" id="numSubjects" placeholder="Number of Subjects" min="1">
+        <button id="createSubjectsBtn">Create Inputs</button>
+
+        <form id="subjectsForm"></form>
+
+        <div id="sgpaResult">SGPA: 0.00</div>
+
+        <button id="exportBtn">Export PDF</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
